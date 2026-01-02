@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Hariom Narang&#39;s Experiments</title>
+<link>https://experiments.narang99.in/</link>
+<atom:link href="https://experiments.narang99.in/index.xml" rel="self" type="application/rss+xml"/>
+<description>My Experiments Log</description>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Wed, 01 Jan 2025 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>test notebook</title>
+  <dc:creator>hariom  narang</dc:creator>
+  <link>https://experiments.narang99.in/posts/testconv.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="hello" class="level1">
+<h1>hello</h1>
+<p>Im testing convert to blog form for htmlk</p>
+<section id="hello-another-heading-in-markdown-cell" class="level2">
+<h2 class="anchored" data-anchor-id="hello-another-heading-in-markdown-cell">hello another heading in markdown cell</h2>
+<p>yo yo yo</p>
+<div id="ef63a590-6be6-4f77-b5c0-f995bb97a140" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> hariom():</span>
+<span id="cb1-2">    <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hhahaha"</span>)</span></code></pre></div></div>
+</div>
+<div id="0131791d-1137-4cfc-9c96-82af0f1b00ba" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> numpy <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> np</span></code></pre></div></div>
+</div>
+<div id="e37ecb90-3c59-4ca9-b098-51468eb414d0" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1">np.ones((<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">500</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">500</span>))</span></code></pre></div></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<pre><code>array([[1., 1., 1., ..., 1., 1., 1.],
+       [1., 1., 1., ..., 1., 1., 1.],
+       [1., 1., 1., ..., 1., 1., 1.],
+       ...,
+       [1., 1., 1., ..., 1., 1., 1.],
+       [1., 1., 1., ..., 1., 1., 1.],
+       [1., 1., 1., ..., 1., 1., 1.]], shape=(500, 500))</code></pre>
+</div>
+</div>
+<div id="da1c7eaa-8546-48d9-bf92-2b433549a199" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> matplotlib <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span></code></pre></div></div>
+</div>
+<div id="d5b208e6-4834-4f9e-9968-9ae399f6cb90" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!</span> ls <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">~/</span>Downloads<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/*</span>jpg</span></code></pre></div></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>/Users/hariomnarang/Downloads/9df9786767e2b0c4c976acc21bd9c29b.jpg
+/Users/hariomnarang/Downloads/blur3.jpg
+/Users/hariomnarang/Downloads/cat.jpg
+/Users/hariomnarang/Downloads/IMG20250919112738.jpg
+/Users/hariomnarang/Downloads/passport-back-2.jpg
+/Users/hariomnarang/Downloads/passport-back.jpg
+/Users/hariomnarang/Downloads/passport-front-2.jpg
+/Users/hariomnarang/Downloads/passport-front.jpg
+/Users/hariomnarang/Downloads/passport-photo.jpg
+/Users/hariomnarang/Downloads/you-cant-just.jpg</code></pre>
+</div>
+</div>
+<div id="db0286a4-d52e-4616-98f1-7e1e012371ea" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1">im <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.imread(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"/Users/hariomnarang/Downloads/blur3.jpg"</span>)</span></code></pre></div></div>
+</div>
+<div id="7db3594c-a0c4-4bc9-a6a0-4fb596b9019c" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1">im</span></code></pre></div></div>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<pre><code>array([[[2, 0, 1],
+        [2, 0, 1],
+        [2, 0, 1],
+        ...,
+        [3, 3, 3],
+        [2, 2, 0],
+        [1, 1, 0]],
+
+       [[2, 0, 1],
+        [2, 0, 1],
+        [2, 0, 1],
+        ...,
+        [1, 1, 1],
+        [1, 1, 0],
+        [0, 0, 0]],
+
+       [[2, 0, 1],
+        [2, 0, 1],
+        [2, 0, 1],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+
+       ...,
+
+       [[5, 1, 0],
+        [5, 1, 0],
+        [5, 1, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+
+       [[5, 1, 0],
+        [5, 1, 0],
+        [5, 1, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]],
+
+       [[5, 1, 0],
+        [5, 1, 0],
+        [5, 1, 0],
+        ...,
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]]], shape=(427, 640, 3), dtype=uint8)</code></pre>
+</div>
+</div>
+<div id="3d4a733b-aa82-46e4-8ea7-9c38616351f0" class="cell" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1">plt.imshow(img)</span></code></pre></div></div>
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[8]</span><span class="ansi-green-fg">, line 1</span>
+<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">1</span> plt.imshow(<span class="ansi-yellow-bg">img</span>)
+
+<span class="ansi-red-fg">NameError</span>: name 'img' is not defined</pre>
+</div>
+</div>
+</div>
+<div id="2f7065df-ba5e-4fc9-83b7-b72b76f2c30a" class="cell" data-execution_count="9">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1">plt.imshow(im)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://experiments.narang99.in/posts/testconv_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <guid>https://experiments.narang99.in/posts/testconv.html</guid>
+  <pubDate>Wed, 01 Jan 2025 18:30:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

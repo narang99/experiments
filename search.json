@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/testconv.html",
+    "href": "posts/testconv.html",
+    "title": "test notebook",
+    "section": "",
+    "text": "Im testing convert to blog form for htmlk\n\n\nyo yo yo\n\ndef hariom():\n    print(\"hhahaha\")\n\n\nimport numpy as np\n\n\nnp.ones((500, 500))\n\narray([[1., 1., 1., ..., 1., 1., 1.],\n       [1., 1., 1., ..., 1., 1., 1.],\n       [1., 1., 1., ..., 1., 1., 1.],\n       ...,\n       [1., 1., 1., ..., 1., 1., 1.],\n       [1., 1., 1., ..., 1., 1., 1.],\n       [1., 1., 1., ..., 1., 1., 1.]], shape=(500, 500))\n\n\n\nfrom matplotlib import pyplot as plt\n\n\n! ls ~/Downloads/*jpg\n\n/Users/hariomnarang/Downloads/9df9786767e2b0c4c976acc21bd9c29b.jpg\n/Users/hariomnarang/Downloads/blur3.jpg\n/Users/hariomnarang/Downloads/cat.jpg\n/Users/hariomnarang/Downloads/IMG20250919112738.jpg\n/Users/hariomnarang/Downloads/passport-back-2.jpg\n/Users/hariomnarang/Downloads/passport-back.jpg\n/Users/hariomnarang/Downloads/passport-front-2.jpg\n/Users/hariomnarang/Downloads/passport-front.jpg\n/Users/hariomnarang/Downloads/passport-photo.jpg\n/Users/hariomnarang/Downloads/you-cant-just.jpg\n\n\n\nim = plt.imread(\"/Users/hariomnarang/Downloads/blur3.jpg\")\n\n\nim\n\narray([[[2, 0, 1],\n        [2, 0, 1],\n        [2, 0, 1],\n        ...,\n        [3, 3, 3],\n        [2, 2, 0],\n        [1, 1, 0]],\n\n       [[2, 0, 1],\n        [2, 0, 1],\n        [2, 0, 1],\n        ...,\n        [1, 1, 1],\n        [1, 1, 0],\n        [0, 0, 0]],\n\n       [[2, 0, 1],\n        [2, 0, 1],\n        [2, 0, 1],\n        ...,\n        [0, 0, 0],\n        [0, 0, 0],\n        [0, 0, 0]],\n\n       ...,\n\n       [[5, 1, 0],\n        [5, 1, 0],\n        [5, 1, 0],\n        ...,\n        [0, 0, 0],\n        [0, 0, 0],\n        [0, 0, 0]],\n\n       [[5, 1, 0],\n        [5, 1, 0],\n        [5, 1, 0],\n        ...,\n        [0, 0, 0],\n        [0, 0, 0],\n        [0, 0, 0]],\n\n       [[5, 1, 0],\n        [5, 1, 0],\n        [5, 1, 0],\n        ...,\n        [0, 0, 0],\n        [0, 0, 0],\n        [0, 0, 0]]], shape=(427, 640, 3), dtype=uint8)\n\n\n\nplt.imshow(img)\n\n\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\nCell In[8], line 1\n----&gt; 1 plt.imshow(img)\n\nNameError: name 'img' is not defined\n\n\n\n\nplt.imshow(im)"
+  },
+  {
+    "objectID": "posts/testconv.html#hello-another-heading-in-markdown-cell",
+    "href": "posts/testconv.html#hello-another-heading-in-markdown-cell",
+    "title": "test notebook",
+    "section": "",
+    "text": "yo yo yo\n\ndef hariom():\n    print(\"hhahaha\")\n\n\nimport numpy as np\n\n\nnp.ones((500, 500))\n\narray([[1., 1., 1., ..., 1., 1., 1.],\n       [1., 1., 1., ..., 1., 1., 1.],\n       [1., 1., 1., ..., 1., 1., 1.],\n       ...,\n       [1., 1., 1., ..., 1., 1., 1.],\n       [1., 1., 1., ..., 1., 1., 1.],\n       [1., 1., 1., ..., 1., 1., 1.]], shape=(500, 500))\n\n\n\nfrom matplotlib import pyplot as plt\n\n\n! ls ~/Downloads/*jpg\n\n/Users/hariomnarang/Downloads/9df9786767e2b0c4c976acc21bd9c29b.jpg\n/Users/hariomnarang/Downloads/blur3.jpg\n/Users/hariomnarang/Downloads/cat.jpg\n/Users/hariomnarang/Downloads/IMG20250919112738.jpg\n/Users/hariomnarang/Downloads/passport-back-2.jpg\n/Users/hariomnarang/Downloads/passport-back.jpg\n/Users/hariomnarang/Downloads/passport-front-2.jpg\n/Users/hariomnarang/Downloads/passport-front.jpg\n/Users/hariomnarang/Downloads/passport-photo.jpg\n/Users/hariomnarang/Downloads/you-cant-just.jpg\n\n\n\nim = plt.imread(\"/Users/hariomnarang/Downloads/blur3.jpg\")\n\n\nim\n\narray([[[2, 0, 1],\n        [2, 0, 1],\n        [2, 0, 1],\n        ...,\n        [3, 3, 3],\n        [2, 2, 0],\n        [1, 1, 0]],\n\n       [[2, 0, 1],\n        [2, 0, 1],\n        [2, 0, 1],\n        ...,\n        [1, 1, 1],\n        [1, 1, 0],\n        [0, 0, 0]],\n\n       [[2, 0, 1],\n        [2, 0, 1],\n        [2, 0, 1],\n        ...,\n        [0, 0, 0],\n        [0, 0, 0],\n        [0, 0, 0]],\n\n       ...,\n\n       [[5, 1, 0],\n        [5, 1, 0],\n        [5, 1, 0],\n        ...,\n        [0, 0, 0],\n        [0, 0, 0],\n        [0, 0, 0]],\n\n       [[5, 1, 0],\n        [5, 1, 0],\n        [5, 1, 0],\n        ...,\n        [0, 0, 0],\n        [0, 0, 0],\n        [0, 0, 0]],\n\n       [[5, 1, 0],\n        [5, 1, 0],\n        [5, 1, 0],\n        ...,\n        [0, 0, 0],\n        [0, 0, 0],\n        [0, 0, 0]]], shape=(427, 640, 3), dtype=uint8)\n\n\n\nplt.imshow(img)\n\n\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\nCell In[8], line 1\n----&gt; 1 plt.imshow(img)\n\nNameError: name 'img' is not defined\n\n\n\n\nplt.imshow(im)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hariom Narang’s Experiments",
+    "section": "",
+    "text": "test notebook\n\n\n\n\n\n\n\n\nJan 2, 2025\n\n\nhariom narang\n\n\n\n\n\nNo matching items"
+  }
+]
