@@ -15,9 +15,8 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
