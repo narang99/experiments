@@ -11,13 +11,7 @@ website:
       - icon: github
         href: https://github.com/narang99
 format:
-  # highlight-style: atom-one
   html:
-    # highlight-style: atom-one-dark
+    mathjax: true
     theme:
-      # - mark.scss
-      # - theme.scss
       - sandstone
-      # - spacelab
-      # - styles.scss
-    # css: styles.css
