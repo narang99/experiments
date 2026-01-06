@@ -1,6 +1,7 @@
 ---
-title: "Hariom Narang's Experiments"
+title: ""
 listing:
+  image-height: 200px 
   contents: posts
   feed: true
   sort: "date desc"
@@ -9,5 +10,5 @@ listing:
   sort-ui: false
   filter-ui: false
 page-layout: full
-title-block-banner: true
+title-block-banner: false
 ---
