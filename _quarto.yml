@@ -13,5 +13,18 @@ website:
 format:
   html:
     mathjax: true
+    respect-user-color-scheme: true
     theme:
+      light: 
       - sandstone
+      # - ft.scss
+      # dark: cyborg
+      # light: lux
+      dark: cyborg
+      # dark: darkly
+      # - sandstone
+      # - ft.scss
+    # highlight-style: atom-one
+    # highlight-style: haddock
+    # highlight-style: gruvbox
+    # code-block-border-left: true
