@@ -37,8 +37,8 @@ $body-bg: $bg0;
 $body-color: $fg1;
 $text-color: $fg1;
 
-$primary: $blue;
-$secondary: $grey1;
+$primary: $bg0;
+$secondary: $bg1;
 $success: $green;
 $info: $aqua;
 $warning: $yellow;
@@ -70,6 +70,7 @@ $card-bg: $bg1;
 $card-border-color: $bg3;
 
 // Navigation
+$navbar-bg: $bg1;
 $navbar-dark-color: rgba($fg1, 0.85);
 $navbar-dark-hover-color: $fg0;
 $navbar-dark-active-color: $fg0;
@@ -136,26 +137,47 @@ body {
 }
 
 // Enhanced code styling
-code {
-  background-color: $bg1;
-  color: $orange;
-  padding: 0.125rem 0.25rem;
-  border-radius: 0.25rem;
-}
+// code {
+//   background-color: $bg2;
+//   color: $orange;
+//   padding: 0.125rem 0.25rem;
+//   border-radius: 0.25rem;
+// }
 
-pre {
-  background-color: $bg2 !important;
-  // border: 1px solid $bg3 !important;
-  padding: 5px;
-  // border-radius: 0.375rem;
-  // border-left: 3px solid $grey1;
-  margin: 1rem 0;
-  // border: 1px solid $bg3 !important;
+// pre {
+//   background-color: $bg2 !important;
+//   border: 1px solid $bg3 !important;
+//   border-radius: 0.375rem;
+//   padding: 1rem;
+//   margin: 1rem 0;
+//   overflow-x: auto;
   
-  code {
-    background-color: transparent;
-    padding: 0;
-  }
+//   code {
+//     background-color: transparent !important;
+//     padding: 0;
+//     color: $fg1;
+//   }
+// }
+
+// // Fix for syntax highlighted code blocks
+// .sourceCode {
+//   background-color: $bg2 !important;
+//   border: 1px solid $bg3 !important;
+//   border-radius: 0.375rem;
+//   overflow-x: auto;
+  
+//   pre {
+//     background-color: transparent !important;
+//     border: none !important;
+//     margin: 0;
+//     padding: 1rem;
+//   }
+// }
+
+// Ensure Quarto code blocks use theme colors
+div.sourceCode {
+  background-color: $bg2 !important;
+  border: 1px solid $bg3 !important;
 }
 
 
@@ -304,6 +326,73 @@ footer {
   background-color: transparent !important;
   color: $fg1 !important;
 }
+
+// Navigation icons
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#{$fg1}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-toggler {
+  border-color: rgba($fg1, 0.1) !important;
+}
+
+// Search icons
+#quarto-search .search-icon {
+  color: $fg1 !important;
+}
+
+.quarto-search-icon {
+  // color: $fg1 !important;
+  fill: currentColor;
+}
+
+// Theme switcher
+.quarto-color-scheme-toggle {
+  // color: $fg1 !important;
+  fill: currentColor;
+}
+
+.quarto-color-scheme-toggle:hover {
+  color: $blue !important;
+}
+
+// Bootstrap Icons
+.bi {
+  color: $fg1 !important;
+}
+
+.bi::before {
+  color: $fg1 !important;
+}
+
+body.quarto-dark .quarto-color-scheme-toggle > .bi::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  fill="#{colorToRGBA(theme-dim($text-color, 10%))}" class="bi bi-toggle-on" viewBox="0 0 16 16"><path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8"/></svg>') !important;
+}
+
+.aa-SubmitIcon {
+  color: $text-color !important;
+}
+.bi:hover {
+  color: $blue !important;
+}
+
+// Search button specific
+#quarto-search .bi {
+  color: $fg1 !important;
+}
+
+// Navigation toggle
+.navbar-toggler {
+  color: $fg1 !important;
+}
+
+// .navbar-dark .navbar-toggler-icon {
+//   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23#{str-slice(#{$fg1}, 2)}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+// }
+
+// .aa-DetachedSearchButtonIcon {
+//   color: $text-color !important;
+// }
 
 // Ensure proper contrast for accessibility
 a:focus,

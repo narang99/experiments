@@ -37,8 +37,8 @@ $body-bg: $bg0;
 $body-color: $fg1;
 $text-color: $fg1;
 
-$primary: $blue;
-$secondary: $grey1;
+$primary: $bg0;
+$secondary: $bg1;
 $success: $green;
 $info: $aqua;
 $warning: $yellow;
@@ -70,6 +70,7 @@ $card-bg: $bg1;
 $card-border-color: $bg3;
 
 // Navigation
+$navbar-bg: $bg1;
 $navbar-light-color: rgba($fg1, 0.85);
 $navbar-light-hover-color: $fg0;
 $navbar-light-active-color: $fg0;
@@ -130,29 +131,18 @@ body {
   color: $fg1;
 }
 
-// .aa-SubmitIcon {
-//   color: $text-color !important;
-// }
-
-// Enhanced code styling
-code {
-  background-color: $bg1;
-  color: $orange;
-  padding: 0.125rem 0.25rem;
-  border-radius: 0.25rem;
+.aa-SubmitIcon {
+  color: $text-color !important;
 }
 
-pre {
+.aa-DetachedSearchButtonIcon {
+  color: $text-color !important;
+}
+
+// Ensure Quarto code blocks use theme colors
+div.sourceCode {
   background-color: $bg1 !important;
   border: 1px solid $bg3 !important;
-  padding: 5px;
-  margin: 1rem 0;
-  // border: 1px solid $bg3 !important;
-  
-  code {
-    background-color: transparent;
-    padding: 0;
-  }
 }
 
 // Blockquotes
@@ -317,6 +307,38 @@ footer {
 
 .quarto-search-icon {
   color: $fg1 !important;
+}
+
+.quarto-color-scheme-toggle {
+  color: $fg1 !important;
+}
+
+.quarto-color-scheme-toggle:hover {
+  color: $blue !important;
+}
+
+// Bootstrap Icons
+.bi {
+  color: $fg1 !important;
+}
+
+.bi:hover {
+  color: $blue !important;
+}
+
+// Search button specific
+#quarto-search .bi {
+  color: $fg1 !important;
+}
+
+// Navigation toggle
+.navbar-toggler {
+  color: $fg1 !important;
+  border-color: rgba($fg1, 0.1) !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23#{str-slice(#{$fg1}, 2)}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
 // Ensure proper contrast for accessibility
