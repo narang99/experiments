@@ -327,11 +327,6 @@ footer {
   color: $fg1 !important;
 }
 
-// Navigation icons
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#{$fg1}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-}
-
 .navbar-toggler {
   border-color: rgba($fg1, 0.1) !important;
 }
@@ -365,10 +360,6 @@ footer {
   color: $fg1 !important;
 }
 
-body.quarto-dark .quarto-color-scheme-toggle > .bi::before {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  fill="#{colorToRGBA(theme-dim($text-color, 10%))}" class="bi bi-toggle-on" viewBox="0 0 16 16"><path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8"/></svg>') !important;
-}
-
 .aa-SubmitIcon {
   color: $text-color !important;
 }
@@ -386,14 +377,6 @@ body.quarto-dark .quarto-color-scheme-toggle > .bi::before {
   color: $fg1 !important;
 }
 
-// .navbar-dark .navbar-toggler-icon {
-//   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23#{str-slice(#{$fg1}, 2)}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-// }
-
-// .aa-DetachedSearchButtonIcon {
-//   color: $text-color !important;
-// }
-
 // Ensure proper contrast for accessibility
 a:focus,
 button:focus,
@@ -402,4 +385,15 @@ textarea:focus,
 select:focus {
   outline: 2px solid $blue;
   outline-offset: 2px;
+}
+
+
+
+body.quarto-dark .quarto-color-scheme-toggle > .bi::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  fill="#{colorToRGBA(theme-dim($text-color, 10%))}" class="bi bi-toggle-on" viewBox="0 0 16 16"><path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8"/></svg>') !important;
+}
+
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#{colorToRGBA(theme-dim($text-color, 10%))}" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg>') !important;
 }
