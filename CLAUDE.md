@@ -35,7 +35,6 @@ This is a Quarto-based blog/experiment site for Hariom Narang. The site is publi
 ### Styling
 - **`gruvbox-material-light.scss`**: Light theme customizations
 - **`gruvbox-material-dark.scss`**: Dark theme customizations (currently modified)
-- **`styles.scss`**: Additional custom styles
 - **`ft.scss`**: Additional styling file
 
 ### Key Features
