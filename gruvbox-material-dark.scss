@@ -389,9 +389,10 @@ select:focus {
 
 
 
-body.quarto-dark .quarto-color-scheme-toggle > .bi::before {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  fill="#{colorToRGBA(theme-dim($text-color, 10%))}" class="bi bi-toggle-on" viewBox="0 0 16 16"><path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8"/></svg>') !important;
+.quarto-color-scheme-toggle > .bi::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  fill="#{colorToRGBA(theme-dim($text-color, 10%))}" class="bi bi-toggle-off" viewBox="0 0 16 16"><path d="M5 3a5 5 0 0 0 0 10h6a5 5 0 0 0 0-10zm6 9a4 4 0 1 1 0-8 4 4 0 0 1 0 8"/></svg>') !important;
 }
+
 
 
 .navbar-toggler-icon {
