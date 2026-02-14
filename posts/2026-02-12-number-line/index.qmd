@@ -75,8 +75,15 @@ $$
 Pretty cool. Matrix multiplication is an operation which allows you to represent a vector in your frame, given its coordinates in another frame, given that you know how to represent the other frame in your frame.\
 This is what I learnt from 3Blue1Brown's series.
 
-
 The important part is that this simple operation formed of multiplication and addition preserves the two fundamental properties of linear spaces: Grid lines are parallel and equidistant.
+
+::: {.callout-note}
+## Confusing thoughts
+Now the matrix for this transformation is defined by placing the coordinates of the new basis vectors in terms of the original ones. This is where the basis of the new frame land. If you have a rotation matrix which rotates the basis vectors by $90^\circ$, then if the matrix is applied to any vector denoted in our current frame, it too, is rotated $90^\circ$.\
+Personally it is not very intuitive to me how this reverse operation using the same matrix transforms the vector. The math seems to work out though.\
+Intiutively, it makes sense that if I rotate my grid by $90^\circ$, a vector in that grid would also rotate by $90^\circ$\
+Why? Again, intuition tells me that it is because ratios are preserved everywhere. I might be wrong though, it is hard to judge this.
+:::
 
 But why does addition preserve these properties?
 
