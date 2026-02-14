@@ -1,0 +1,389 @@
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
+
+
+// Custom Color Palette
+$accent: #FF0F00;
+
+// Base Colors
+$body-bg-custom: #FFFFDD;
+$aside-bg: #fbf1c7;
+$text-color-custom: #272727;
+$strong-color: #272727;
+$title-color: $text-color-custom;
+
+$inline-code-block-bg: $aside-bg;
+// Border Colors
+$border-light: rgba(0, 0, 0, 0.1);
+$border-dark: rgba(255, 255, 255, 0.3);
+$border-medium: rgba(50, 50, 50, 0.3);
+$blockquote-border: #333333;
+$table-border: #cccccc;
+
+// Table Colors
+$table-bg: white;
+$table-alt-bg: #f8f8f8;
+$caption-color: #555;
+
+// Highlight Colors
+$highlight-red: #ffaaaa;
+$highlight-orange: #ffd486;
+$highlight-green: #aaffad;
+$highlight-blue: #d8e7ff;
+
+// Text Colors
+$color-red: #FF0F00;
+$color-orange: #eb9800;
+$color-green: #00eb1d;
+$color-blue: #0062ff;
+
+// Bootstrap Variable Overrides
+$body-bg: $body-bg-custom;
+$body-color: $text-color-custom;
+$text-color: $text-color-custom;
+
+$primary: $accent;
+$secondary: $aside-bg;
+$success: $color-green;
+$info: $color-blue;
+$warning: $color-orange;
+$danger: $color-red;
+$light: $aside-bg;
+$dark: $title-color;
+
+// Typography
+$font-family-base: 'Inconsolata', monospace, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-size-root: 1.25rem;
+// $font-size-base: 1rem;
+$line-height-base: 1.5;
+
+
+$headings-color: $title-color;
+$headings-font-weight: 600;
+
+// Links
+$link-color: $accent;
+$link-hover-color: darken($color-blue, 15%);
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+// Code
+$code-color: $color-red;
+$code-bg: $inline-code-block-bg;
+$pre-color: $text-color-custom;
+
+// Cards and containers
+$card-bg: $table-bg;
+$card-border-color: $table-border;
+
+// Navigation
+$navbar-bg: $body-bg;
+$navbar-light-color: rgba($text-color-custom, 0.85);
+$navbar-light-hover-color: $title-color;
+$navbar-light-active-color: $title-color;
+$navbar-light-disabled-color: rgba($text-color-custom, 0.3);
+$navbar-light-toggler-border-color: $border-light;
+
+// Tables
+$table-bg: $table-bg;
+$table-color: $text-color-custom;
+$table-border-color: $table-border;
+$table-striped-bg: $table-alt-bg;
+$table-hover-bg: $table-alt-bg;
+
+// Borders
+$border-color: $table-border;
+$border-radius: 0.375rem;
+
+// Buttons
+$btn-border-radius: $border-radius;
+$btn-font-weight: 500;
+
+// Forms
+$input-bg: $table-bg;
+$input-border-color: $table-border;
+$input-color: $text-color-custom;
+$input-focus-border-color: $color-blue;
+$input-placeholder-color: $caption-color;
+
+// Pagination
+$pagination-bg: $table-bg;
+$pagination-border-color: $table-border;
+$pagination-hover-bg: $table-alt-bg;
+$pagination-active-bg: $primary;
+
+// Dropdowns
+$dropdown-bg: $table-bg;
+$dropdown-border-color: $table-border;
+$dropdown-color: $text-color-custom;
+$dropdown-link-color: $text-color-custom;
+$dropdown-link-hover-color: $title-color;
+$dropdown-link-hover-bg: $table-alt-bg;
+
+// Modals
+$modal-content-bg: $body-bg-custom;
+$modal-content-border-color: $table-border;
+$modal-header-border-color: $table-border;
+$modal-footer-border-color: $table-border;
+
+/*-- scss:rules --*/
+
+// Global styling
+html {
+  background-color: $body-bg-custom;
+}
+
+body {
+  background-color: $body-bg-custom;
+  color: $text-color-custom;
+}
+
+// Strong/bold text
+strong, b {
+  color: $strong-color;
+}
+
+// Aside/sidebar background
+aside, .sidebar {
+  background-color: $aside-bg;
+  border-color: $border-medium;
+}
+
+.aa-SubmitIcon {
+  color: $text-color-custom !important;
+}
+
+.aa-DetachedSearchButtonIcon {
+  color: $text-color-custom !important;
+}
+
+// Code blocks
+div.sourceCode {
+  background-color: $inline-code-block-bg !important;
+  border: 1px solid $table-border !important;
+}
+
+code {
+  background-color: $inline-code-block-bg;
+  color: $code-color;
+}
+
+// Blockquotes
+blockquote {
+  border-left: 4px solid $blockquote-border;
+  background-color: $table-alt-bg;
+  padding: 1rem;
+  margin: 1rem 0;
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Enhanced table styling
+table {
+  background-color: $table-bg;
+  
+  th {
+    background-color: $table-alt-bg;
+    border-color: $table-border;
+    color: $title-color;
+  }
+  
+  td {
+    border-color: $table-border;
+  }
+  
+  caption {
+    color: $caption-color;
+  }
+}
+
+// Card enhancements
+.card {
+  background-color: $table-bg;
+  border-color: $table-border;
+  
+  .card-header {
+    background-color: $table-alt-bg;
+    border-bottom-color: $table-border;
+  }
+  
+  .card-footer {
+    background-color: $table-alt-bg;
+    border-top-color: $table-border;
+  }
+}
+
+// Navigation enhancements
+.navbar {
+  background-color: $body-bg !important;
+  border-bottom: 1px solid $border-medium;
+  
+  .navbar-brand {
+    color: $title-color !important;
+    font-weight: 600;
+  }
+  
+  .nav-link {
+    color: $text-color-custom !important;
+    
+    &:hover {
+      color: $color-blue !important;
+    }
+  }
+}
+
+// Header/Banner styling
+header, .quarto-title-banner {
+  background-color: $body-bg !important;
+}
+
+// Quarto title styling
+.quarto-title .title {
+  color: $title-color !important;
+}
+
+h1.title {
+  color: $title-color !important;
+}
+
+.quarto-title-block .quarto-title {
+  color: $title-color !important;
+}
+
+// Sidebar styling
+.sidebar {
+  background-color: $body-bg;
+  border-left: 1px solid $border-medium;
+  padding-left: 10px;
+  
+  .nav-link {
+    color: $text-color-custom;
+    
+    &:hover {
+      background-color: $table-alt-bg;
+      color: $color-blue;
+    }
+    
+    &.active {
+      background-color: $table-alt-bg;
+      color: $title-color;
+    }
+  }
+}
+
+// Footer styling
+footer {
+  background-color: $aside-bg;
+  border-top: 1px solid $table-border;
+  color: $caption-color;
+}
+
+// Callout styling with highlight colors
+.callout {
+  border-left-width: 4px;
+  border-left-style: solid;
+  background-color: $table-alt-bg;
+  
+  &.callout-note {
+    border-left-color: $color-blue;
+    background-color: $highlight-blue;
+  }
+  
+  &.callout-warning {
+    border-left-color: $color-orange;
+    background-color: $highlight-orange;
+  }
+  
+  &.callout-important {
+    border-left-color: $color-red;
+    background-color: $highlight-red;
+  }
+  
+  &.callout-tip {
+    border-left-color: $color-green;
+    background-color: $highlight-green;
+  }
+  
+  &.callout-caution {
+    border-left-color: $color-orange;
+    background-color: $highlight-orange;
+  }
+}
+
+// Search styling
+.aa-Form {
+  background-color: $table-bg !important;
+  border-color: $table-border !important;
+}
+
+.aa-Input {
+  background-color: transparent !important;
+  color: $text-color-custom !important;
+}
+
+// Navbar toggle
+.navbar-toggler {
+  border-color: $border-light !important;
+  color: $text-color-custom !important;
+}
+
+// Search icon
+#quarto-search .search-icon {
+  color: $text-color-custom !important;
+}
+
+.quarto-search-icon {
+  color: $text-color-custom !important;
+}
+
+.quarto-color-scheme-toggle {
+  color: $text-color-custom !important;
+}
+
+.quarto-color-scheme-toggle:hover {
+  color: $color-blue !important;
+}
+
+// Bootstrap Icons
+.bi {
+  color: $text-color-custom !important;
+}
+
+.bi:hover {
+  color: $accent !important;
+}
+
+// Search button specific
+#quarto-search .bi {
+  color: $text-color-custom !important;
+}
+
+// Ensure proper contrast for accessibility
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid $color-blue;
+  outline-offset: 2px;
+}
+
+// SVG icon customization
+.quarto-color-scheme-toggle > .bi::before {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#{colorToRGBA(theme-dim($text-color-custom, 10%))}" class="bi bi-toggle-off" viewBox="0 0 16 16"><path d="M11 4a4 4 0 0 1 0 8H8a5 5 0 0 0 2-4 5 5 0 0 0-2-4zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8M0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5"/></svg>') !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#{colorToRGBA(theme-dim($text-color-custom, 10%))}" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg>') !important;
+}
+
+.description {
+  color: $accent;
+}
+
+div.quarto-post h3.listing-title a {
+  color: $accent;
+}

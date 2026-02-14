@@ -1,0 +1,209 @@
+---
+title: Looking back at number line
+description: A deceptively simple construct
+categories: [Math]
+author: Hariom Narang
+date: "February 12, 2026"
+---
+
+Recently, I had been going through the [fantastic series on linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) by [3Blue1Brown](https://www.youtube.com/@3blue1brown). The series talks about the geometric intuition behind linear algebra (how can you think about a matrix transformation geometrically?). I was investigating the geometric meaning of matrix multiplication while working through the series, and fell down an interesting rabbit hole.
+
+::: {.callout-important}
+I will be using images created by [3Blue1Brown](https://www.youtube.com/@3blue1brown) for his Linear algebra series. It saves a lot of effort for me in this blog post, and I don't think I can do a better job.
+:::
+
+# Basics
+
+Linear algebra works with coordinate systems which can be imagined as grids with the following properties:
+
+- Grid lines are parallel to each other
+- Space between grid lines is always equal
+
+This is the classical coordinate system we have been working with since our childhood. Let's look at the 2D grid defined by two vectors $(\hat{i}, \hat{j})$.
+
+![Basic grid @3blue1brown](./ij-grid.jpeg){fig-cap="Basic grid (3Blue1Brown)" width=70%}
+
+
+The basis vectors $\hat{i}$ and $\hat{j}$ are not required to be perpendicular. The figure below is also a valid grid.
+
+![Skewed grid](./skewed-basis-v12.svg){fig-cap="Skewed grid" width=70%}
+
+It does not matter what you call these basis vectors, they are called $\hat{v_1}$ and $\hat{v_2}$ here.
+
+A vector in a grid can be uniquely identified with its projections on each basis vector.
+
+![Projections @3blue1brown](./vec-projec-ij-grid.jpeg){fig-cap="Projections @3blue1brown" width=70%}
+
+## The question
+
+Given a vector represented in some coordinate frame, how do we represent the same vector in another coordinate frame?
+
+::: {.callout-note}
+Here, the actual vector is just some arrow with some direction and magnitude in space. The absolute direction and magnitude do not change.
+
+The vector can be represented as $a\hat{v_1} + b\hat{v_2}$ in the skewed frame. The same vector can be represented using $c\hat{i} + d\hat{j}$ in another frame. We are given $a$ and $b$, we want to find $c$ and $d$.
+:::
+
+Suppose we have a vector $\vec{v} = u\hat{v_1} + w\hat{v_2}$. We want it in terms of $\hat{i}, \hat{j}$.
+Let us say we know how $\hat{v_1}$ and $\hat{v_2}$ in terms of $\hat{i}, \hat{j}$.
+
+$$\hat{v_1} = a_1\hat{i} + b_1\hat{j}$$
+$$\hat{v_2} = a_2\hat{i} + b_2\hat{j}$$
+
+We can then substitude these vectors in $\hat{v}$
+
+$$\vec{v} = u\hat{v_1} + w\hat{v_2}$$
+$$\vec{v} = u(a_1\hat{i} + b_1\hat{j}) + w(a_2\hat{i} + b_2\hat{j})$$
+$$\vec{v} = (ua_1 + wa_2)\hat{i} + (ub_1 + wb_2)\hat{j}$$
+
+Written another way
+$$
+\vec{v} =
+\begin{bmatrix}
+a_1 & a_2 \\
+b_1 & b_2
+\end{bmatrix}
+\begin{bmatrix}
+u \\
+w
+\end{bmatrix}
+$$
+
+::: {.meme-right}
+![](/assets/mad-scientist-duck.jpeg)
+:::
+Pretty cool. Matrix multiplication is an operation which allows you to represent a vector in your frame, given its coordinates in another frame, given that you know how to represent the other frame in your frame.\
+This is what I learnt from 3Blue1Brown's series.
+
+
+The important part is that this simple operation formed of multiplication and addition preserves the two fundamental properties of linear spaces: Grid lines are parallel and equidistant.
+
+But why does addition preserve these properties?
+
+# Why use $+$
+
+The first thing that irks me is this notation $a\hat{i} + b\hat{j}$. This is the equivalent of
+$$
+\begin{bmatrix}
+a \\
+b
+\end{bmatrix}
+$$
+
+What is the $+$ sign in the expression $a\hat{i} + b\hat{j}$ mean? Is this just a convenient way of denoting the vector in one line? Does it not mean add? Is it a lie? Can I just call it $a\hat{i} | b\hat{j}$
+
+The moment we do the operation described in the previous section, the equivalent of matrix multiplication, we see that the $+$ sign really is addition in the conventional sense. Why does keeping a $+$ sign there automagically preserve ratios and parallelism of grid lines? Thinking of a warping measurement plane can play weird tricks with your mind and everything that was memorised and felt intuitive for simpler geometries seems to fall apart.
+
+## Simple Example: Only scale $\hat{i}$
+
+Let's create a new coordinate frame $(\hat{u}, \hat{w}) = (2\hat{i}, \hat{j})$.\
+In this case, only the base unit for measurement along $\hat{i}$ changes (the new unit is twice the original unit). Intuitively, we know that the grid created in the new frame would have the same kind of parallel lines as the original grid, the lines would just have twice the distance between them as the original one.\
+The operation is "stretching" our plane. Why does multiplication stretch the plane so uniformly though? The intuition tells us that it is because distance is uniform everywhere.
+
+## Defining addition
+
+We now come to another question. If you look at addition, it creates a new number by adding a base number to the latest number. Said simply, `2 + 1 = 3` and `3 + 1 = 4`. A new number is reached by adding `1` to an older number. (only talking about natural numbers at this point).\
+Think of it from a geometric perspective, adding a base distance to an existing distance gives us a new distance. It is a leap of faith to assume that distance measurements done like this would behave uniformly like preserving ratios.
+
+# Number line
+
+To investigate how addition works, I started working on a number line. Let's look at a basic number line.
+
+```
+0    1    2    3    4    5    6
+┼────┼────┼────┼────┼────┼────┼
+```
+
+I'm going to replace numbers with random symbols, we don't want to get confused by markers which are themselves defined by additive properties.
+
+```
+O    a    d    q    f    b    u
+┼────┼────┼────┼────┼────┼────┼
+```
+
+Let's go back to the basics now. We start with the following assumptions for our fake number line.
+
+We will denote the distance between two points using $D(p1, p2)$. Combination of distances are denoted by $|$ operator.
+
+1. Distance between 2 adjacent labels is always the same, $B$
+$$D(O, a) = D(a, d) = D(d, q) = ... = B$$
+2. Equal parts of distances when combined give equal distance
+$$D(O, d) = D(a, q) = D(d, f) = ...$$
+$$D(O, q) = D(a, f) = D(d, b) = ...$$
+
+
+Let's see what $D(O, d)$ is
+$$D(O, d) = D(O, a) | D(a, d)$$
+$$D(O, d) = B | B$$
+
+What about $D(O, q)$?
+$$D(O, q) = D(O, d) | D(d, q)$$
+$$D(O, q) = (B|B) | B$$
+
+Distances combined of equal parts are equal. This means that
+$$D(O, d) | D(d, q) = D(O, a) | D(a, q)$$
+$$D(O, q) = D(O, a) | D(a, q) = B | (B|B)$$
+
+Using these two, we can say
+$$(B|B) | B = B | (B|B)$$
+$$D(O, d) | D(O, a) = D(O, a) | D(O, d)$$
+Thats commutativity in distances. The operator $|$ is commutative.
+
+I'm not sure about how to go about proving associativity. If you just look at the line geometrically, it does not matter what order the distances are combined in, associativity seems pretty trivial. I'm not sure however, if this is enough.
+
+It is easy to see that $|$ has properties similar to addition. (The distance thingy is additive by nature).
+
+## Multiplying
+
+Multiplying is the act of combining something a number of times. This simple definition says that there needs to be some notion of counting. I tried coming up with it without the notion of counting, but it seems impossible to me for now.
+
+::: {.callout-important}
+Counting is inherently different from measuring.\
+The number line we remember apparently uses the same symbols for both counting and measuring (1, 2, 3, ...). This is not necessary (in fact, I feel it is an intellectual leap to combine those two different symbols into one, unifying measurement with counting, we are not there yet).
+:::
+
+I will use the standard numbers `1,2,3,4...` for counting. We will stick with our arbitrary terminology for measuring.\
+I will put the number line here again, for easier reference.
+
+```
+O    a    d    q    f    b    u
+┼────┼────┼────┼────┼────┼────┼
+```
+
+$Dist(O, q)$ can be split into some $k$ parts, each of distance $Dist(O, a)$. We brute force this for now (forget division).\
+If we create a single part of size $Dist(O, a)$, then we see that you would need 3 parts to make $Dist(O, q)$.\
+$$ Dist(O, q) = 3 * Dist(O, a)$$
+
+Can $Dist(O, q)$ be split into parts of $Dist(O, d)$? Does not look like it, no matter how many times you brute force it.\
+$Dist(O, f)$ can be however cut in 2 parts, $Dist(O, d)$ and $Dist(d, f)$, they are both equal sizes.
+$$Dist(O, f) = 2 * Dist(O, d)$$
+
+$Dist(O, f)$ can also be cut into parts of size $Dist(O, a)$.
+$$Dist(O, f) = Dist(O, a) | Dist(a, d) | Dist(d, q) | Dist(q, f)$$
+Since all of them are equal
+$$Dist(O, f) = 4 * Dist(O, a)$$
+
+Similarly, $Dist(O, d) = 2 * Dist(O, a)$
+In the expression $Dist(O, f) = 2 * Dist(O, d)$, lets do a basic substitution
+$$Dist(0, f) = 2 * (2 * Dist(O, a))$$
+
+Combining our older expression and this expression:
+$$Dist(O, f) = 4 * Dist(O, a) = 2 * (2 * Dist(O, a))$$
+
+It is not trivial here to say that $2*2 = 4$. We have never defined the meaning of $*$ in context of our numerical symbols. We have only defined it to work on a `Dist` and a numerical symbol.
+
+Let's write individual distances using $|$ and $B$.
+$$Dist(O, f) = 4 * Dist(O, a)$$
+$$B|B|B|B = 4 * B$$
+
+This is in agreement with our definition that multiplying is combining a distance some number of times. We count the number of distance combinations. If that base distance is $B$, we simply count the number of $|$ operations to denote that distance.
+
+Doing the same substitution for
+$$Dist(O, f) = 2 * Dist(O, d)$$
+$$Dist(O, f) = 2 * (B|B)$$
+
+Using the previous derivation
+$$Dist(O, f) = 4 * B = 2 * (B|B) = 2 * (2 * B)$$
+
+It's like I'm running in circles now ;_;.\
+We count the distance $Dist(O, a)=B$ twice, and then we count that distance twice. That is the same as counting $Dist(O, a)$ 4 times. Can we make the deduction that $2*2 = 4$? Multiplying as defined on a count number of distances, seems to be a meta operation on counting itself. Blah. I need a coffee.

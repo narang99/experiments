@@ -12,6 +12,8 @@ website:
         href: https://github.com/narang99
 format:
   html:
+    css:
+      - styles.css
     highlight-style:
       dark: gruvbox-dark
       light: gruvbox
