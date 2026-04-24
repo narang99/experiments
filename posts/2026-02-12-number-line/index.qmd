@@ -214,3 +214,11 @@ $$Dist(O, f) = 4 * B = 2 * (B|B) = 2 * (2 * B)$$
 
 It's like I'm running in circles now ;_;.\
 We count the distance $Dist(O, a)=B$ twice, and then we count that distance twice. That is the same as counting $Dist(O, a)$ 4 times. Can we make the deduction that $2*2 = 4$? Multiplying as defined on a count number of distances, seems to be a meta operation on counting itself. Blah. I need a coffee.
+
+
+::: {.callout-important}
+After finishing the last lecture now, it seems that linear algebra is really about every transformation which composes like + and *.\
+Number system formation itself seems to follow these rules (how we remember numbers and our symbols are very related to + and *, they are themselves linear of sorts). What about other systems? Other recurrent systems which are hard to define right now? Is it because our number system hinders us?
+
+I need to go through how the number system comes up, how it is formed, from the original equation of how a next number is generated. I then need to change that recurrent relation to what I want. I would also need to create a notion of equality. Then we need to see how new systems look like.
+:::
