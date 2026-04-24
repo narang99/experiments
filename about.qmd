@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: assets/duck-with-knife.png
+image: assets/duck-with-knife.webp
 about:
   template: solana
   image-width: 10em
@@ -30,4 +30,5 @@ Feel free to reach out at <span class="email">hariom.2711@gmail.com</span>
 ---
 
 PS: Why the duck? I kinda just find them funny and cute, I don't have a pet or anything, but ducks as memojis are the best.  
+
 

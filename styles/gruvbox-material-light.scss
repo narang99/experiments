@@ -1,4 +1,6 @@
 /*-- scss:defaults --*/
+// quarto-scss-analysis-annotation { "origin": "gruvbox (custom theme)" }
+
 
 // Gruvbox Material Light Soft Color Palette
 $bg0: #f2e5bc;
@@ -244,11 +246,6 @@ h1.title {
       background-color: $bg2;
       color: $blue;
     }
-    
-    &.active {
-      background-color: $bg3;
-      color: $fg0;
-    }
   }
 }
 
@@ -370,3 +367,6 @@ select:focus {
 div.quarto-post h3.listing-title a {
   color: $fg0;
 }
+
+
+// quarto-scss-analysis-annotation { "origin": null }

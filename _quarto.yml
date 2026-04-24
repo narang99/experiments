@@ -12,18 +12,17 @@ website:
         href: https://github.com/narang99
 format:
   html:
+    toc: true
     css:
       - styles.css
     highlight-style:
-      dark: gruvbox-dark
       light: gruvbox
-    # code-block-border-left: true
     mathjax: true
     theme:
-      light: gruvbox-material-light.scss
-      dark: gruvbox-material-dark.scss
-    # sandstone
-    # highlight-style: atom-one
-    # highlight-style: haddock
-    # highlight-style: gruvbox
-    # code-block-border-left: true
+      # {}
+      # light: cosmo
+      # light: litera
+      # light: spacelab
+      # light: [simplex]
+      # dark: [cyborg]
+      light: [./styles/gruvbox-material-light.scss]
