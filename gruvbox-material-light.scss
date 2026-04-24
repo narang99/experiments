@@ -19,9 +19,10 @@ $bg_visual_blue: #e1e7ed;
 $bg_visual_yellow: #f0e5c7;
 $bg_current_word: #ebdbb2;
 
-$fg0: #654735;
 $fg1: #3c3836;
 $red: #cc241d;
+// $fg0: #654735;
+$fg0: $red;
 $orange: #d65d0e;
 $yellow: #d79921;
 $green: #98971a;
@@ -52,6 +53,7 @@ $font-size-base: 1rem;
 $line-height-base: 1.6;
 
 $headings-color: $fg0;
+$heading-color: $blue;
 $headings-font-weight: 600;
 
 // Links
@@ -217,6 +219,10 @@ header, .quarto-title-banner {
   color: $fg0 !important;
 }
 
+.quarto-title .description {
+  color: $fg1;
+}
+
 h1.title {
   color: $fg0 !important;
 }
@@ -358,4 +364,9 @@ select:focus {
 
 .navbar-toggler-icon {
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#{colorToRGBA(theme-dim($text-color, 10%))}" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg>') !important;
+}
+
+
+div.quarto-post h3.listing-title a {
+  color: $fg0;
 }
